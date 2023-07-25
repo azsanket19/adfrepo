@@ -166,15 +166,15 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"ds_filesystem": {
-								"value": "@activity('Copy data1').output",
+								"value": "@pipeline().parameters.pp_container",
 								"type": "Expression"
 							},
 							"ds_directory": {
-								"value": "@activity('Copy data1').output",
+								"value": "@pipeline().parameters.pp_layer_name_out2",
 								"type": "Expression"
 							},
 							"ds_filename": {
-								"value": "@activity('Copy data1').output",
+								"value": "@pipeline().parameters.pp_file_name",
 								"type": "Expression"
 							}
 						}
@@ -210,7 +210,7 @@
 								"type": "Expression"
 							},
 							"ds_directory": {
-								"value": "@pipeline().parameters.pp_layer_name_out",
+								"value": "@pipeline().parameters.pp_layer_name_out2",
 								"type": "Expression"
 							},
 							"ds_filename": {
@@ -245,6 +245,9 @@
 				"type": "string"
 			},
 			"pp_layer_name_out": {
+				"type": "string"
+			},
+			"pp_layer_name_out2": {
 				"type": "string"
 			}
 		},
