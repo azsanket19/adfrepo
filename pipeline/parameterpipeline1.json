@@ -1,6 +1,20 @@
 {
 	"name": "parameterpipeline1",
 	"properties": {
+		"parameters": {
+			"pp_container": {
+				"type": "string"
+			},
+			"pp_layer_name_in": {
+				"type": "string"
+			},
+			"pp_file_name": {
+				"type": "string"
+			},
+			"pp_layer_name_out": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
