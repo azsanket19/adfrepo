@@ -111,6 +111,9 @@
 			},
 			"pp_directory": {
 				"type": "string"
+			},
+			"pp_directory_output": {
+				"type": "string"
 			}
 		},
 		"annotations": []
