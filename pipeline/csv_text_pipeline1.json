@@ -60,7 +60,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@endswith(item().name,'csv')",
+									"value": "@contains(item().name,'csv')",
 									"type": "Expression"
 								},
 								"ifFalseActivities": [
