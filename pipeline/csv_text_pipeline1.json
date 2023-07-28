@@ -193,7 +193,13 @@
 			"pp_container": {
 				"type": "string"
 			},
-			"pp_directory": {
+			"pp_directory_in": {
+				"type": "string"
+			},
+			"pp_directory_csv": {
+				"type": "string"
+			},
+			"pp_directory_txt": {
 				"type": "string"
 			}
 		},
