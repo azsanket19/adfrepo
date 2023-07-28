@@ -34,41 +34,6 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
-						"mappings": [
-							{
-								"source": {
-									"name": "ProductID,Name,ProductNumber,Color,StandardCost,ListPrice,Size,Weight,ProductCategoryID,ProductModelID,SellStartDate,SellEndDate,DiscontinuedDate,ThumbNailPhoto,ThumbnailPhotoFileName,rowguid,ModifiedDate",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "ProductID",
-									"type": "Int32",
-									"physicalType": "int"
-								}
-							},
-							{
-								"sink": {
-									"name": "Name1",
-									"type": "String",
-									"physicalType": "varchar"
-								}
-							},
-							{
-								"sink": {
-									"name": "ProductNumber",
-									"type": "Int32",
-									"physicalType": "int"
-								}
-							},
-							{
-								"sink": {
-									"name": "color",
-									"type": "String",
-									"physicalType": "varchar"
-								}
-							}
-						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
