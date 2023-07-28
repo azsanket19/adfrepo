@@ -1,0 +1,35 @@
+{
+	"name": "SqlServerTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "skSqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ProductID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name1",
+				"type": "varchar"
+			},
+			{
+				"name": "ProductNumber",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "color",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "SalesLT",
+			"table": "Sampel"
+		}
+	}
+}
