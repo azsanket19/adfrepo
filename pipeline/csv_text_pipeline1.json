@@ -111,13 +111,13 @@
 										},
 										"inputs": [
 											{
-												"referenceName": "parameterDelimitedText2",
+												"referenceName": "if_practicse_task_DelimitedText1",
 												"type": "DatasetReference"
 											}
 										],
 										"outputs": [
 											{
-												"referenceName": "parameterDelimitedText2",
+												"referenceName": "if_practicse_task_DelimitedText1",
 												"type": "DatasetReference"
 											}
 										]
