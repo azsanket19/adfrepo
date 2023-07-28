@@ -59,6 +59,10 @@
 							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
+								"expression": {
+									"value": "@endswith(item().name,'csv')",
+									"type": "Expression"
+								},
 								"ifFalseActivities": [
 									{
 										"name": "Copy data2",
@@ -167,7 +171,7 @@
 										},
 										"inputs": [
 											{
-												"referenceName": "parameterDelimitedText2",
+												"referenceName": "if_practicse_task_DelimitedText1",
 												"type": "DatasetReference"
 											}
 										],
@@ -185,6 +189,14 @@
 				}
 			}
 		],
+		"parameters": {
+			"pp_container": {
+				"type": "string"
+			},
+			"pp_directory": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
