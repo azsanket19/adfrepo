@@ -121,6 +121,10 @@
 													"ds_directory": {
 														"value": "@pipeline().parameters.pp_directory_in",
 														"type": "Expression"
+													},
+													"ds_filename": {
+														"value": "@item().name",
+														"type": "Expression"
 													}
 												}
 											}
@@ -136,6 +140,10 @@
 													},
 													"ds_directory": {
 														"value": "@pipeline().parameters.pp_directory_txt",
+														"type": "Expression"
+													},
+													"ds_filename": {
+														"value": "@item().name",
 														"type": "Expression"
 													}
 												}
@@ -201,6 +209,10 @@
 													"ds_directory": {
 														"value": "@pipeline().parameters.pp_directory_in",
 														"type": "Expression"
+													},
+													"ds_filename": {
+														"value": "@item().name",
+														"type": "Expression"
 													}
 												}
 											}
@@ -216,6 +228,10 @@
 													},
 													"ds_directory": {
 														"value": "@pipeline().parameters.pp_directory_csv",
+														"type": "Expression"
+													},
+													"ds_filename": {
+														"value": "@item().name",
 														"type": "Expression"
 													}
 												}
