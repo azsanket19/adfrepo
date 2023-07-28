@@ -14,7 +14,7 @@
 				"folderPath": "STAGEING",
 				"fileSystem": "adlscontainer"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "\t",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
