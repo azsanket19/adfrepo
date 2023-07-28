@@ -1,0 +1,12 @@
+{
+	"name": "skSqlServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=skserver19.database.windows.net;initial catalog=ADF;user id=skserver19",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDBGOTREOTU4LUZGQjMtNDA5Ri1BMEMxLUI2RDI4RDdFNEYwRF9jNGRkMWQzNi1lNGE3LTRiMTQtYjkxYi1iN2FhZWE5ZGQ0ODIiDQp9"
+		}
+	}
+}
