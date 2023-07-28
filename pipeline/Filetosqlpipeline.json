@@ -27,15 +27,9 @@
 						}
 					},
 					"sink": {
-						"type": "DelimitedTextSink",
-						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
-						},
-						"formatSettings": {
-							"type": "DelimitedTextWriteSettings",
-							"quoteAllText": true,
-							"fileExtension": ".txt"
-						}
+						"type": "SqlServerSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
 					},
 					"enableStaging": false,
 					"translator": {
@@ -43,14 +37,35 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "ProductID\tName\tProductNumber\tColor\tStandardCost\tListPrice\tSize\tWeight\tProductCategoryID\tProductModelID\tSellStartDate\tSellEndDate\tDiscontinuedDate\tThumbNailPhoto\tThumbnailPhotoFileName\trowguid\tModifiedDate",
+									"name": "ProductID,Name,ProductNumber,Color,StandardCost,ListPrice,Size,Weight,ProductCategoryID,ProductModelID,SellStartDate,SellEndDate,DiscontinuedDate,ThumbNailPhoto,ThumbnailPhotoFileName,rowguid,ModifiedDate",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ProductID\tName\tProductNumber\tColor\tStandardCost\tListPrice\tSize\tWeight\tProductCategoryID\tProductModelID\tSellStartDate\tSellEndDate\tDiscontinuedDate\tThumbNailPhoto\tThumbnailPhotoFileName\trowguid\tModifiedDate",
+									"name": "ProductID",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "Name1",
 									"type": "String",
-									"physicalType": "String"
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"sink": {
+									"name": "ProductNumber",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"sink": {
+									"name": "color",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							}
 						],
@@ -69,7 +84,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "sqlwriteDelimitedText",
+						"referenceName": "SqlServerTable2",
 						"type": "DatasetReference"
 					}
 				]
