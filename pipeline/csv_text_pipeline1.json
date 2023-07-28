@@ -112,13 +112,33 @@
 										"inputs": [
 											{
 												"referenceName": "if_practicse_task_DelimitedText1",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"ds_container": {
+														"value": "@pipeline().parameters.pp_container",
+														"type": "Expression"
+													},
+													"ds_directory": {
+														"value": "@pipeline().parameters.pp_directory_in",
+														"type": "Expression"
+													}
+												}
 											}
 										],
 										"outputs": [
 											{
 												"referenceName": "if_practicse_task_DelimitedText1",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"ds_container": {
+														"value": "@pipeline().parameters.pp_container",
+														"type": "Expression"
+													},
+													"ds_directory": {
+														"value": "@pipeline().parameters.pp_directory_txt",
+														"type": "Expression"
+													}
+												}
 											}
 										]
 									}
@@ -172,13 +192,33 @@
 										"inputs": [
 											{
 												"referenceName": "if_practicse_task_DelimitedText1",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"ds_container": {
+														"value": "@pipeline().parameters.pp_container",
+														"type": "Expression"
+													},
+													"ds_directory": {
+														"value": "@pipeline().parameters.pp_directory_in",
+														"type": "Expression"
+													}
+												}
 											}
 										],
 										"outputs": [
 											{
 												"referenceName": "if_practicse_task_DelimitedText1",
-												"type": "DatasetReference"
+												"type": "DatasetReference",
+												"parameters": {
+													"ds_container": {
+														"value": "@pipeline().parameters.pp_container",
+														"type": "Expression"
+													},
+													"ds_directory": {
+														"value": "@pipeline().parameters.pp_directory_csv",
+														"type": "Expression"
+													}
+												}
 											}
 										]
 									}
