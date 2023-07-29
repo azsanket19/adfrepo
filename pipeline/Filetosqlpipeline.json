@@ -99,7 +99,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "SqlServerTable2",
+						"referenceName": "SqlServerTableSampel",
 						"type": "DatasetReference"
 					}
 				]

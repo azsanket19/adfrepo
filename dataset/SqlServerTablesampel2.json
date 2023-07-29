@@ -1,5 +1,5 @@
 {
-	"name": "SqlServerTableSampel",
+	"name": "SqlServerTablesampel2",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "skSqlServer1",
@@ -19,8 +19,7 @@
 			},
 			{
 				"name": "ProductNumber",
-				"type": "int",
-				"precision": 10
+				"type": "varchar"
 			},
 			{
 				"name": "color",
@@ -29,7 +28,7 @@
 		],
 		"typeProperties": {
 			"schema": "SalesLT",
-			"table": "Sampel"
+			"table": "Sampel2"
 		}
 	}
 }
