@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "SalesLTProduct.csv",
-				"folderPath": "STAGEING",
+				"fileName": "csv_sltp.csv",
+				"folderPath": "CSV",
 				"fileSystem": "adlscontainer"
 			},
 			"columnDelimiter": ",",
