@@ -321,7 +321,7 @@
 			},
 			"pp_directory_getmetadata": {
 				"type": "string",
-				"defaultValue": " BRONZE / AdventureWorksLT2012-20230716T053508Z-001.zip / AdventureWorksLT2012"
+				"defaultValue": "BRONZE / AdventureWorksLT2012-20230716T053508Z-001.zip / AdventureWorksLT2012"
 			}
 		},
 		"annotations": []
