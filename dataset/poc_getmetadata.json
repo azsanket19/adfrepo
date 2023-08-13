@@ -8,9 +8,6 @@
 		"parameters": {
 			"ds_container": {
 				"type": "string"
-			},
-			"ds_directory": {
-				"type": "string"
 			}
 		},
 		"annotations": [],
