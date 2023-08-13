@@ -25,7 +25,8 @@
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings",
 							"compressionProperties": {
-								"type": "ZipDeflateReadSettings"
+								"type": "ZipDeflateReadSettings",
+								"preserveZipFileNameAsFolder": false
 							}
 						}
 					},
@@ -33,7 +34,7 @@
 						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureBlobFSWriteSettings",
-							"copyBehavior": "PreserveHierarchy"
+							"copyBehavior": "FlattenHierarchy"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
@@ -150,7 +151,7 @@
 								"type": "Expression"
 							},
 							"ds_directory": {
-								"value": "@pipeline().parameters.pp_directory_raw",
+								"value": "@pipeline().parameters.pp_directory_getmetadata",
 								"type": "Expression"
 							}
 						}
@@ -317,6 +318,10 @@
 			},
 			"pp_filename_stg": {
 				"type": "string"
+			},
+			"pp_directory_getmetadata": {
+				"type": "string",
+				"defaultValue": " BRONZE / AdventureWorksLT2012-20230716T053508Z-001.zip / AdventureWorksLT2012"
 			}
 		},
 		"annotations": []
