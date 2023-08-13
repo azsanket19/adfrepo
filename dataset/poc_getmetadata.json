@@ -18,10 +18,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": {
-					"value": "@dataset().ds_directory",
-					"type": "Expression"
-				},
+				"folderPath": "BRONZE / AdventureWorksLT2012-20230716T053508Z-001.zip / AdventureWorksLT2012",
 				"fileSystem": {
 					"value": "@dataset().ds_container",
 					"type": "Expression"
