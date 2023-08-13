@@ -6,19 +6,13 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"pp_container": {
+			"ds_container": {
 				"type": "string"
 			},
-			"pp_directory_stg": {
+			"ds_directory": {
 				"type": "string"
 			},
-			"pp_directory_raw": {
-				"type": "string"
-			},
-			"pp_directory_silver": {
-				"type": "string"
-			},
-			"pp_filename_stg_in": {
+			"ds_filename": {
 				"type": "string"
 			}
 		},
