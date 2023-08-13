@@ -1,0 +1,38 @@
+{
+	"name": "ds_poc_universal",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"pp_container": {
+				"type": "string"
+			},
+			"pp_directory_stg": {
+				"type": "string"
+			},
+			"pp_directory_raw": {
+				"type": "string"
+			},
+			"pp_directory_silver": {
+				"type": "string"
+			},
+			"pp_filename_stg_in": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
